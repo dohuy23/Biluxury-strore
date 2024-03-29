@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Import Fontawesome -->
+    <link rel="stylesheet" href="./lib/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/solid.css">
+  
+    <!-- Import Bootstrap CSS -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+  
+    <!-- Import OWL CSS -->
+    <link rel="stylesheet" href="./lib/OwlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/OwlCarousel/assets/owl.theme.default.min.css">
+  
+    <!-- import CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" data-header>
+    <div class="topbar-header">
+      <div class="topbar-content">
+        <p>
+          <strong>DIỆN ĐỒ BẢNH BAO, CÙNG NÀNG VUI LỄ </strong>
+        </p>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="logo">
+      </div>
+
+      <div class="header-action">
+
+        <button class="header-action-btn" aria-label="user">
+          <a href="./log.html">
+            <i class="fa-regular fa-user"></i>
+          </a>
+        </button>
+
+        <button class="header-action-btn" aria-label="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+        <div class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SIDEBAR
+  -->
+
+  <div class="sidebar" data-navbar>
+      
+    <div class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+      <i class="fa-regular fa-circle-xmark"></i>
+    </div>
+
+    <div class="wrapper">
+
+      <ul class="sidebar-list">
+
+        <li>
+          <p class="sidebar-list-title">Language</p>
+        </li>
+
+        <li>
+          <a href="#" class="sidebar-link">English</a>
+        </li>
+
+        <li>
+          <a href="#" class="sidebar-link">French</a>
+        </li>
+
+        <li>
+          <a href="#" class="sidebar-link">Arabric</a>
+        </li>
+
+      </ul>
+
+      <ul class="sidebar-list">
+
+        <li>
+          <p class="sidebar-list-title">Currency</p>
+        </li>
+
+        <li>
+          <a href="#" class="sidebar-link">USD - US Dollar</a>
+        </li>
+
+        <li>
+          <a href="#" class="sidebar-link">Euro</a>
+        </li>
+
+        <li>
+          <a href="#" class="sidebar-link">Pound</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a href="./index.html" class="navbar-link" data-nav-link>Trang chủ</a>
+        </li>
+      
+        <li class="navbar-item">
+          <a href="./cart.html" class="navbar-link" data-nav-link>Sản phẩm</a>
+        </li>
+        <li class="navbar-item">
+          <a href="./about-us.html" class="navbar-link" data-nav-link>Thương hiệu</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="./blog.html" class="navbar-link" data-nav-link>Blogs</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <ul class="contact-list">
+
+      <li>
+        <p class="contact-list-title">BI LUXURY</p>
+      </li>
+
+      <li class="contact-item">
+        <address class="address">
+          Địa chỉ: 505 Nguyễn Trãi, Phường Thanh Xuân Nam, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam
+
+        </address>
+      </li>
+
+      <li class="contact-item">
+        <a href="mailto:support.center@woodex.co" class="contact-link">support.center@Biluxury.com</a>
+      </li>
+
+      <li class="contact-item">
+        <a  class="contact-link">Hotline: 094.432.8989</a>
+      </li>
+
+    </ul>
+
+    <div class="social-wrapper">
+
+      <p class="social-list-title">Mạng xã hội:</p>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://www.facebook.com/biluxury.vn" class="social-link">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.youtube.com/channel/UCiul7pLaT4npA1H7TLMQ4Qg" class="social-link">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/biluxury.vn/" class="social-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+
+
+      </ul>
+
+    </div>
+
+  </div>
+        <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero"  >
+        <div class="banner">
+          <img src="./assets/images/blog_banner.jpg" alt="banner">
+        </div>
+    </section>
+
+  <div class="link-page">
+    <div class="content-link">
+      <div class="link-cart"><a href="./index.html" style="text-decoration: none;">Trang chủ</a> / <strong>Blog</strong>
+      </div>
+
+
+  </div>
+  </div>
+
+<!-- silder -->
+<div class="blog-sider">
+  
+  <div class="slider-container">
+    <div class="left-slide down-button">
+      <div class="box-content" style="background-color: #2A86BA">
+        <h1>A- ACTIVE POLO</h1>
+        <p>Tiêu chuẩn của trang phục Golf mang đến một thiết kế tạo nên chuẩn mực của thời trang thoải mái với độ đàn hồi cao và sự cao cấp trong công nghệ không đường may cùng tính thời trang hiện đại, tinh tế để các Golfer tự tin thể hiện sự khoẻ khoắn cho mọi tư thế vận động trên sân Golf.</p>
+        <button href="#" class="btn-flat">Khám phá thêm</button>
+      </div>
+      <div  class="box-content" style="background-color: #d6917f">
+        <h1>TUỔI TRẺ HAI THẾ HỆ</h1>
+        <p>Khí thế đàn ông Việt không chỉ tiếp nối tương lai của một thế hệ hào hùng mà còn tạo nên một lịch sử mới của nhuệ khí người Việt.</p>
+        <button href="#" class="btn-flat">Khám phá thêm</button>
+      </div>
+      <div  class="box-content" style="background-color: #252E33">
+        <h1>DẤU ẤN MỚI 2024</h1>
+        <p>Biluxury đánh dấu sự trưởng thành của thương hiệu khi bước sang thập kỉ mới cùng phong cách thời trang có sức hút đặc biệt bởi sự pha trộn giữa nét độc bản và nét thoải mái, chỉn chu không cần cố gắng của đàn ông hiện đại.</p>
+        <button href="#" class="btn-flat">Khám phá thêm</button>
+      </div>
+      <div  class="box-content" style="background-color: #a03419">
+        <h1>TẾT LÀ ĐỂ TRỞ VỀ </h1>
+        <p>Đừng để những bộn bề của thị thành ngăn bạn trở về nhà. Tết này, về nhà sớm nhé, để mang không khí ngày Tết về cho gia đình thân yêu. </p>
+        <button href="#" class="btn-flat">Khám phá thêm</button>
+      </div>
+    </div>
+    <div class="right-slide up-button">
+     <div class="imgback" style="background-image: url(./assets/images/blog_red.jpg)"></div>
+     <div class="imgback" style="background-image: url(./assets/images/blog_blue.jpg)"></div>
+     <div class="imgback" style="background-image: url(./assets/images/blog_be.jpg)"></div>
+     <div class="imgback" style="background-image: url(./assets/images/blog_pink.jpg)"></div>
+    </div>
+    <!-- <div class="action-buttons">
+      <button class="down-button blog-btn">
+        <i class="fas fa-arrow-down"></i>
+      </button>
+      <button class="up-button blog-btn">
+        <i class="fas fa-arrow-up"></i>
+      </button> -->
+    </div>
+  </div>
+</div>
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Khám phá</h2>
+
+            <a href="#" class="btn-link">
+              Xem tất cả
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 374; --height: 243;">
+                  <img src="./assets/images/KB1.jpg" width="374" height="243" loading="lazy"
+                    alt="Unique products that will impress your home in 2022." class="img-cover">
+
+                    <a href="#" class="card-btn">
+                      Đọc thêm
+                    </a>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Tuần lễ Môi trường thế
+                      giới - Rộn ràng quà tặng từ thiên nhiên.</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                  
+                      <time class="card-meta-text" datetime="2022-09-27">ĐĂNG LÚC: <strong>27-7-2022</strong></time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <a href="#" class="card-meta-text">Admin</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      in <a href="#" class="card-meta-text">deco</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 374; --height: 243;">
+                  <img src="./assets/images/KB2.jpg" width="374" height="243" loading="lazy"
+                    alt="Navy Blue & White Striped Area Rugs" class="img-cover">
+
+                    <a href="#" class="card-btn">
+                      Đọc thêm
+                    </a>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">MỪNG SINH NHẬT
+                      BILUXURY 8 TUỔI - SALE UPTO 50% CÙNG QUÀ TẶNG KHỦNG</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <time class="card-meta-text" datetime="2022-09-25">ĐĂNG LÚC: <strong>19-8-2023</strong></time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <a href="#" class="card-meta-text">Admin</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      in <a href="#" class="card-meta-text">deco</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 374; --height: 243;">
+                  <img src="./assets/images/KB3.jpg" width="374" height="243" loading="lazy"
+                    alt="Woodex White Coated Staircase Floating" class="img-cover">
+
+                  <a href="#" class="card-btn">
+                    Đọc thêm
+                  </a>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Tuần lễ Môi trường thế
+                      giới - Rộn ràng quà tặng từ thiên nhiên</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <time class="card-meta-text" datetime="2022-09-18">ĐĂNG LÚC: <strong>10-7-2022</strong></time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <a href="#" class="card-meta-text">Admin</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      in <a href="#" class="card-meta-text">deco</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+           <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <div class="newsletter-card">
+
+            <div class="card-content">
+              <h2 class="h2 section-title">Kết nối với chúng tôi</h2>
+
+              <p class="section-text">
+                Đăng ký để được giảm 50%
+              </p>
+            </div>
+
+            <form action="" class="card-form">
+              <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
+
+              <button type="submit" class="newsletter-btn" aria-label="subscribe">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+        <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <div href="#" class="logo-1">BI LUXURY</div>
+
+          <ul>
+
+            <li class="footer-list-item">
+              <i class="fa-solid fa-location-dot"></i>
+
+              <address class="address">
+                Địa chỉ: Quận Thanh Xuân, Thành phố Hà Nội
+              </address>
+            </li>
+
+            <li class="footer-list-item">
+              <i class="fa-solid fa-phone"></i>
+
+              <a href="tel:+1234567890" class="footer-link">Hotline: 094.432.8989</a>
+            </li>
+
+            <li>
+              <ul class="social-list">
+
+                <li>
+                  <a href="https://www.facebook.com/biluxury.vn" class="social-link">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+        
+                <li>
+                  <a href="https://www.youtube.com/channel/UCiul7pLaT4npA1H7TLMQ4Qg" class="social-link">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/biluxury.vn/" class="social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+        
+        
+              </ul>
+        
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">CHÍNH SÁCH</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chính sách thanh toán</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Hướng dẫn mua hàng</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chính sách đổi sản phẩm</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chính sách đổi sản phẩm</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">LIÊN KẾT</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Thời trang nam Biluxury</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Áo polo nam</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Áo sơ mi nam</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Áo vest nam</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Kết nối</p>
+
+          <form action="" class="footer-form">
+            <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
+
+            <button type="submit" class="footer-form-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+
+
+        </div>
+
+      </div>
+
+     
+
+    </div>
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+      <!-- import API -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <!-- Import Jquery -->
+  <script src="./lib/jquery-3.7.1.min.js"></script>
+
+  <!-- Import OWL JS -->
+  <script src="./lib/OwlCarousel/owl.carousel.min.js"></script>
+    <!-- Import SETUP OWL JS -->
+    <script src="./assets/js/setup-owl.js"></script>
+
+  <!-- custom js link-->
+  <script src="./assets/js/script.js" ></script>
+
+  <script src="./assets/js/blog.js"></script>
+
+
+</body>
+</html>

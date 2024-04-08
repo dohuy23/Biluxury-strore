@@ -1,11 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
 
 
 
@@ -452,6 +444,7 @@ body.active { overflow: hidden; }
   position: relative;
   font-size: 24px;
   transition: var(--transition-1);
+  outline: none;
 }
 
 .header-action-btn:is(:hover, :focus) { color: var(--tan-crayola); }
@@ -994,6 +987,7 @@ button,i {
   background: none;
   border: none;
   font: inherit;
+  outline: none;
 }
 a{
   text-decoration: none;
@@ -1239,7 +1233,9 @@ a{
   }
 
 }
-
+button .header-action-btn{
+  outline: none;
+}
 
 
 

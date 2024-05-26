@@ -468,8 +468,13 @@ body.active { overflow: hidden; }
 /*-----------------------------------*\
   #SIDEBAR
 \*-----------------------------------*/
-
+.container-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .sidebar {
+
   position: fixed;
   top: 0;
   right: -420px;
@@ -549,7 +554,22 @@ body.active { overflow: hidden; }
   opacity: 1;
   pointer-events: all;
 }
+.ul-list{
+  list-style-type: none; /* Loại bỏ dấu đầu dòng của danh sách */
+  padding: 0; /* Xóa padding mặc định của danh sách */
+  margin: 0; /* Xóa margin mặc định của danh sách */
+  display: flex;
+  align-items: center;
 
+}
+.ul-list li{
+  padding: 15px 20px; /* Khoảng cách giữa các mục menu */
+
+}
+.ul-list li a{
+  text-decoration: none; /* Loại bỏ gạch chân ở các liên kết */
+  display: block; /* Chuyển các liên kết thành khối để điều chỉnh kích thước và độ rộng */
+}
 
 
 
@@ -559,6 +579,7 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 .banner{
   width: 100%;
+
   overflow: hidden;
 }
 .banner img{

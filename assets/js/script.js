@@ -377,16 +377,16 @@ let closeBtn = document.querySelector("#close-btn");
 // thêm sự kiệN mở giỏ hàng
 cart.addEventListener("click", () => {
   // alert("123")
-  cartModalOverlay.style.transform = "translateY(0)";
+  cartModalOverlay.style.transform = "translateX(0)";
 });
 //  đóng giỏ hàng
 closeBtn.addEventListener("click", () => {
-  cartModalOverlay.style.transform = "translateY(-200%)";
+  cartModalOverlay.style.transform = "translateX(200%)";
 });
 // đóng khi click ra ngoài màn hình
 cartModalOverlay.addEventListener("click", (event) => {
   if (event.target.classList.contains("cart-modal-overlay") == true) {
-    cartModalOverlay.style.transform = "translateY(-200%)";
+    cartModalOverlay.style.transform = "translateX(200%)";
   }
 });
 // thêm sản phẩm vào trong giỏ hàng
@@ -444,15 +444,16 @@ const addItemToCart = (cartItem) => {
     cartItem.forEach((item) => {
       // console.log(item);
       let HTML = `
-      <img class="cart-image" src="${item.image}" alt="hoa bo">
+      <img class="cart-image" src="${item.image}" alt="quan ao">
       <div class="cart-main-name">
         <div class="cart-name">
           <div class="cart-name-title">${item.name}</div>
-          <button class="remove-btn">Xoá</button>
+          <button  class="remove-btn"><i class="fa-solid fa-square-xmark"></i></button>
         </div>
         <div class="cart-price-quality">
+        <span class="cart-price">${item.price}</span>
          <input class="product-quantity" type="number" value="${item.quantity}" min="0">
-        <span class="cart-price">${item.price}</span></div>
+        </div>
       </div>
    `;
 

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./lib/fontawesome/css/fontawesome.css">
   <link rel="stylesheet" href="./lib/fontawesome/css/brands.css">
   <link rel="stylesheet" href="./lib/fontawesome/css/solid.css">
+  
 
   <!-- Import Bootstrap CSS -->
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
@@ -24,8 +25,11 @@
   <link rel="stylesheet" href="./lib/OwlCarousel/assets/owl.theme.default.min.css">
 
   <!-- import CSS -->
+  
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/custon.css">
+  
 
 <body>
   <!-- giỏ hàng -->
@@ -141,72 +145,116 @@
     <div class="nav-close-btn" aria-label="close menu" data-nav-toggler>
       <i class="fa-regular fa-circle-xmark"></i>
     </div>
-
+    <div class="search-box-offcanvas">
+      <form>
+          <input type="text" placeholder="Search product...">
+          <button class="search-btn"><i class="fa fa-search"></i></button>
+      </form>
+  </div>
+  <div class="navba">
+    <div class="mobile-navigation">
+      <!-- mobile menu navigation start -->
+      <nav>
+          <ul class="mobile-menu">
+              <li class="menu-item-has-children"><a href="#">Home</a>
+                  <ul class="dropdown">
+                      <li><a href="index.html">Home Page 1</a></li>
+                      <li><a href="index-2.html">Home Page 2</a></li>
+                      <li><a href="index-3.html">Home Page 3</a></li>
+                      <li><a href="index-4.html">Home Page 4</a></li>
+                  </ul>
+              </li>
+              <li class="menu-item-has-children"><a href="#">Shop</a>
+                  <ul class="megamenu dropdown">
+                      <li class="mega-title has-children"><a href="#">Shop Layouts</a>
+                          <ul class="dropdown">
+                              <li><a href="shop.html">Shop Left Sidebar</a></li>
+                              <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                              <li><a href="shop-list-left.html">Shop List Left Sidebar</a></li>
+                              <li><a href="shop-list-right.html">Shop List Right Sidebar</a></li>
+                              <li><a href="shop-fullwidth.html">Shop Full Width</a></li>
+                          </ul>
+                      </li>
+                      <li class="mega-title has-children"><a href="#">Product Details</a>
+                          <ul class="dropdown">
+                              <li><a href="product-details.html">Single Product Details</a></li>
+                              <li><a href="variable-product-details.html">Variable Product Details</a></li>
+                              <li><a href="external-product-details.html">External Product Details</a></li>
+                              <li><a href="gallery-product-details.html">Gallery Product Details</a></li>
+                              <li><a href="countdown-product-details.html">Countdown Product Details</a></li>
+                          </ul>
+                      </li>
+                      <li class="mega-title has-children"><a href="#">Others</a>
+                          <ul class="dropdown">
+                              <li><a href="error404.html">Error 404</a></li>
+                              <li><a href="compare.html">Compare Page</a></li>
+                              <li><a href="cart.html">Cart Page</a></li>
+                              <li><a href="checkout.html">Checkout Page</a></li>
+                              <li><a href="wishlist.html">Wish List Page</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              <li class="menu-item-has-children "><a href="#">Blog</a>
+                  <ul class="dropdown">
+                      <li><a href="blog.html">Blog Left Sidebar</a></li>
+                      <li><a href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
+                      <li><a href="blog-list-fullwidth.html">Blog List Fullwidth</a></li>
+                      <li><a href="blog-grid.html">Blog Grid Page</a></li>
+                      <li><a href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
+                      <li><a href="blog-grid-fullwidth.html">Blog Grid Fullwidth</a></li>
+                      <li><a href="blog-details-sidebar.html">Blog Details Sidebar Page</a></li>
+                      <li><a href="blog-details-fullwidth.html">Blog Details Fullwidth Page</a></li>
+                  </ul>
+              </li>
+              <li class="menu-item-has-children "><a href="#">Pages</a>
+                  <ul class="dropdown">
+                      <li><a href="frequently-questions.html">FAQ</a></li>
+                      <li><a href="my-account.html">My Account</a></li>
+                      <li><a href="login-register.html">login &amp; register</a></li>
+                  </ul>
+              </li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+      </nav>
+      <!-- mobile menu navigation end -->
+  </div>
+  </div>
     <div class="wrapper">
 
-      <ul class="sidebar-list">
-
-        <li>
-          <p class="sidebar-list-title">Language</p>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">English</a>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">French</a>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">Arabric</a>
-        </li>
-
-      </ul>
-
-      <ul class="sidebar-list">
-
-        <li>
-          <p class="sidebar-list-title">Currency</p>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">USD - US Dollar</a>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">Euro</a>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">Pound</a>
-        </li>
-
-      </ul>
-
+      <div class="offcanvas-widget-area">
+        <div class="switcher">
+            <div class="language">
+                <span class="switcher-title">Language: </span>
+                <div class="switcher-menu">
+                    <ul>
+                        <li><a href="#">English</a>
+                            <ul class="switcher-dropdown">
+                                <li><a href="#">German</a></li>
+                                <li><a href="#">French</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="currency">
+                <span class="switcher-title">Currency: </span>
+                <div class="switcher-menu">
+                    <ul>
+                        <li><a href="#">$ USD</a>
+                            <ul class="switcher-dropdown">
+                                <li><a href="#">€ EUR</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     
     </div>
 
-    <nav class="navbar">
-      <ul class="navbar-list">
-
-        <li class="navbar-item">
-          <a href="./index.html" class="navbar-link" data-nav-link>Trang chủ</a>
-        </li>
-
-        <li class="navbar-item">
-          <a href="./cart.html" class="navbar-link" data-nav-link>Sản phẩm</a>
-        </li>
-
-        <li class="navbar-item">
-          <a href="./about-us.html" class="navbar-link" data-nav-link>Thương hiệu</a>
-        </li>
-
-        <li class="navbar-item">
-          <a href="./blog.html" class="navbar-link" data-nav-link>Blogs</a>
-        </li>
-
-      </ul>
-    </nav>
+    </div>
 
     <ul class="contact-list">
 
@@ -580,53 +628,7 @@
         </div>
       </section>
 
-       
-    <!-- section 2 -->
-    <section class="grid">
-      
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-lg-6 line-right">
-            <div class="collection">
-            </div>
-          </div>
 
-          <div class="col-md-12 col-lg-6 collection-right">
-            <div class="row pl">
-              <div class="col-12 line-bottom">
-                <div class="right-1 position-relative">
-                  <div class="collection-right-info">
-                    <div class="collection-title">
-                      <h2>BILUXURY</h2>
-                    </div>
-                    <p class="body2 mb-1">THAY ĐỔI ĐỂ THÀNH CÔNG</p>
-                    <p class="body2 mb-4">TỦ ĐỒ CHO PHÁI MẠNH</p>
-                    <button href="#" class="btn-flat"
-                      >Sản phẩm mới</button>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="right-2 position-relative">
-                                    <div class="collection-right-info">
-                    <div class="collection-title">
-                      <h2>𝐀𝐂𝐓𝐈𝐕𝐄-𝐒𝐓𝐑𝐄𝐓𝐂𝐇 𝐓𝐑𝐀𝐂𝐊𝐒𝐔𝐈𝐓</h2>
-                    </div>
-                    <p class="body2 mb-1">Xuống phố bảnh bao.</p>
-                    <p class="body2 mb-4">Mang đến sự thoải mái và phong cách.</p>
-                    <button href="#" class="btn-flat"
-                      >Khám phá thêm</button>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end section 2 -->
 
 
 
@@ -798,7 +800,7 @@
             </div>
 
             <form action="" class="card-form">
-              <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
+              <input type="email" placeholder="Your email address" required class="email-field">
 
               <button type="submit" class="newsletter-btn" aria-label="subscribe">
                 <i class="fa-solid fa-arrow-right"></i>
@@ -971,7 +973,9 @@
     <script src="./assets/js/setup-owl.js"></script>
 
   <!-- custom js link-->
+  <script src="./assets/js/custon.js"></script>
   <script src="./assets/js/script.js" ></script>
+  
 
 
 </body>

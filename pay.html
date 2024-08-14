@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="stylesheet" href="./assets/css/pay.css">
+  <link rel="stylesheet" href="./assets/css/custon.css">
 <body>
   <!-- giỏ hàng -->
   <div class="cart-modal-overlay">
@@ -35,10 +36,18 @@
         <div class="cart-tittle">
           <strong>Giỏ hàng</strong>
         </div>
+        <div class="icon-next">
+          <i id="close-btn" class="fa-solid fa-chevron-right"></i>
+        </div>
         <!-- <div class="cart-count">0</div> -->
       </div>
-      <i id="close-btn" class="fas fa-times"></i>
- 
+    
+      <div class="card-sale">
+        <div class="sale-title">
+          <div class="icon-sale"><i class="fa-solid fa-envelope-open"></i></div>
+          <div class="sale-text">Mua 400.000đ để được freeship. </div>
+        </div>
+      </div>
   
       <div class="product-rows"></div>
   
@@ -46,12 +55,13 @@
     
           <div class="cart-total-price">
             <div class="cart-total">TỔNG TIỀN:</div>
-            <span class="total-price">0 VND</span>
+            <span class="total-price">0 đ</span>
           </div>
-          <a href="#">
+          <div class="pur-btn">
+          <a  href="./pay.html">
             <button class="purchase-btn">Thanh toán</button></a
           >
-      
+        </div>
         
       </div>
     </div>
@@ -68,14 +78,33 @@
         </p>
       </div>
     </div>
-    <div class="container">
+    <div class="container-menu">
 
       <div class="logo" href="./index.html">
         <img src="./assets/images/logo.png" alt="logo">
       </div>
-
+     
+        <div class="list-menu">
+          <ul class="ul-list">
+            <li class="list-meho">
+              <a href="./index.html" class="navbar-link" data-nav-link>Trang chủ</a>
+            </li>
+    
+            <li class="list-meho">
+              <a href="./cart.html" class="navbar-link" data-nav-link>Sản phẩm</a>
+            </li>
+    
+            <li class="list-meho">
+              <a href="./about-us.html" class="navbar-link" data-nav-link>Thương hiệu</a>
+            </li>
+    
+            <li class="list-meho">
+              <a href="./blog.html" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+          </ul>
+      
+      </div>
       <div class="header-action">
-
         <button class="header-action-btn" aria-label="user">
           <a href="./log.html">
             <i class="fa-regular fa-user"></i>
@@ -91,9 +120,9 @@
 
    
 
-        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+        <div class="header-action-btn" aria-label="open menu" data-nav-toggler>
           <i class="fa-solid fa-bars"></i>
-        </button>
+        </div>
 
       </div>
 
@@ -113,72 +142,116 @@
     <div class="nav-close-btn" aria-label="close menu" data-nav-toggler>
       <i class="fa-regular fa-circle-xmark"></i>
     </div>
-
+    <div class="search-box-offcanvas">
+      <form>
+          <input type="text" placeholder="Search product...">
+          <button class="search-btn"><i class="fa fa-search"></i></button>
+      </form>
+  </div>
+  <div class="navba">
+    <div class="mobile-navigation">
+      <!-- mobile menu navigation start -->
+      <nav>
+          <ul class="mobile-menu">
+              <li class="menu-item-has-children"><a href="#">Home</a>
+                  <ul class="dropdown">
+                      <li><a href="index.html">Home Page 1</a></li>
+                      <li><a href="index-2.html">Home Page 2</a></li>
+                      <li><a href="index-3.html">Home Page 3</a></li>
+                      <li><a href="index-4.html">Home Page 4</a></li>
+                  </ul>
+              </li>
+              <li class="menu-item-has-children"><a href="#">Shop</a>
+                  <ul class="megamenu dropdown">
+                      <li class="mega-title has-children"><a href="#">Shop Layouts</a>
+                          <ul class="dropdown">
+                              <li><a href="shop.html">Shop Left Sidebar</a></li>
+                              <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                              <li><a href="shop-list-left.html">Shop List Left Sidebar</a></li>
+                              <li><a href="shop-list-right.html">Shop List Right Sidebar</a></li>
+                              <li><a href="shop-fullwidth.html">Shop Full Width</a></li>
+                          </ul>
+                      </li>
+                      <li class="mega-title has-children"><a href="#">Product Details</a>
+                          <ul class="dropdown">
+                              <li><a href="product-details.html">Single Product Details</a></li>
+                              <li><a href="variable-product-details.html">Variable Product Details</a></li>
+                              <li><a href="external-product-details.html">External Product Details</a></li>
+                              <li><a href="gallery-product-details.html">Gallery Product Details</a></li>
+                              <li><a href="countdown-product-details.html">Countdown Product Details</a></li>
+                          </ul>
+                      </li>
+                      <li class="mega-title has-children"><a href="#">Others</a>
+                          <ul class="dropdown">
+                              <li><a href="error404.html">Error 404</a></li>
+                              <li><a href="compare.html">Compare Page</a></li>
+                              <li><a href="cart.html">Cart Page</a></li>
+                              <li><a href="checkout.html">Checkout Page</a></li>
+                              <li><a href="wishlist.html">Wish List Page</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              <li class="menu-item-has-children "><a href="#">Blog</a>
+                  <ul class="dropdown">
+                      <li><a href="blog.html">Blog Left Sidebar</a></li>
+                      <li><a href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
+                      <li><a href="blog-list-fullwidth.html">Blog List Fullwidth</a></li>
+                      <li><a href="blog-grid.html">Blog Grid Page</a></li>
+                      <li><a href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
+                      <li><a href="blog-grid-fullwidth.html">Blog Grid Fullwidth</a></li>
+                      <li><a href="blog-details-sidebar.html">Blog Details Sidebar Page</a></li>
+                      <li><a href="blog-details-fullwidth.html">Blog Details Fullwidth Page</a></li>
+                  </ul>
+              </li>
+              <li class="menu-item-has-children "><a href="#">Pages</a>
+                  <ul class="dropdown">
+                      <li><a href="frequently-questions.html">FAQ</a></li>
+                      <li><a href="my-account.html">My Account</a></li>
+                      <li><a href="login-register.html">login &amp; register</a></li>
+                  </ul>
+              </li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+      </nav>
+      <!-- mobile menu navigation end -->
+  </div>
+  </div>
     <div class="wrapper">
 
-      <ul class="sidebar-list">
-
-        <li>
-          <p class="sidebar-list-title">Language</p>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">English</a>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">French</a>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">Arabric</a>
-        </li>
-
-      </ul>
-
-      <ul class="sidebar-list">
-
-        <li>
-          <p class="sidebar-list-title">Currency</p>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">USD - US Dollar</a>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">Euro</a>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">Pound</a>
-        </li>
-
-      </ul>
-
+      <div class="offcanvas-widget-area">
+        <div class="switcher">
+            <div class="language">
+                <span class="switcher-title">Language: </span>
+                <div class="switcher-menu">
+                    <ul>
+                        <li><a href="#">English <i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="switcher-dropdown">
+                                <li><a href="#">German</a></li>
+                                <li><a href="#">French</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="currency">
+                <span class="switcher-title">Currency: </span>
+                <div class="switcher-menu">
+                    <ul>
+                        <li><a href="#">$ USD <i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="switcher-dropdown">
+                                <li><a href="#">€ EUR</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     
     </div>
 
-    <nav class="navbar">
-      <ul class="navbar-list">
-
-        <li class="navbar-item">
-          <a href="./index.html" class="navbar-link" data-nav-link>Trang chủ</a>
-        </li>
-
-        <li class="navbar-item">
-          <a href="./cart.html" class="navbar-link" data-nav-link>Sản phẩm</a>
-        </li>
-
-        <li class="navbar-item">
-          <a href="./about-us.html" class="navbar-link" data-nav-link>Thương hiệu</a>
-        </li>
-
-        <li class="navbar-item">
-          <a href="./blog.html" class="navbar-link" data-nav-link>Blogs</a>
-        </li>
-
-      </ul>
-    </nav>
+    </div>
 
     <ul class="contact-list">
 
@@ -468,6 +541,7 @@
 
   <!-- custom js link-->
   <script src="./assets/js/script.js" ></script>
+  <script src="./assets/js/custon.js"></script>
 
 </body>
 

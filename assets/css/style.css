@@ -896,7 +896,9 @@ a.card-meta-text:is(:hover, :focus) { color: var(--tan-crayola); }
   bottom: 0;
   padding-inline: 20px;
 }
-
+.row > *{
+  margin-bottom: 50px;
+}
 
 
 

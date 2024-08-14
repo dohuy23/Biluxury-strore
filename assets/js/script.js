@@ -381,12 +381,12 @@ cart.addEventListener("click", () => {
 });
 //  đóng giỏ hàng
 closeBtn.addEventListener("click", () => {
-  cartModalOverlay.style.transform = "translateX(200%)";
+  cartModalOverlay.style.transform = "translateX(-200%)";
 });
 // đóng khi click ra ngoài màn hình
 cartModalOverlay.addEventListener("click", (event) => {
   if (event.target.classList.contains("cart-modal-overlay") == true) {
-    cartModalOverlay.style.transform = "translateX(200%)";
+    cartModalOverlay.style.transform = "translateX(-200%)";
   }
 });
 // thêm sản phẩm vào trong giỏ hàng
